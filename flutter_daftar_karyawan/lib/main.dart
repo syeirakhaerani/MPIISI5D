@@ -60,7 +60,7 @@ class MyHomePage extends StatelessWidget {
                           children: [
                             Text('Umur : ${snapshot.data![index].umur}'),
                             Text(
-                                'Alamat : ${snapshot.data![index].alamat.jalan}')
+                                'Alamat : ${snapshot.data![index].alamat.jalan}, ${snapshot.data![index].alamat.kota} , ${snapshot.data![index].alamat.provinsi}')
                           ],
                         ));
                   });
