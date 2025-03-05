@@ -10,7 +10,7 @@ class ApiService {
         await http.get(Uri.parse("$baseUrl/movie/now_playing?api_key=$apiKey"));
 
     final data = json.decode(response.body);
-
+    //print(data);
     return List<Map<String, dynamic>>.from(data['results']);
   }
 
