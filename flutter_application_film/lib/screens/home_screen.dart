@@ -87,7 +87,12 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Film'),
       ),
       body: Column(
-        children: [_buildMoviesListInterface('All Movies', _allMovies)],
+        children: [
+          _buildMoviesListInterface('All Movies', _allMovies),
+          _buildMoviesListInterface('All Movies', _trendingMovies),
+          _buildMoviesListInterface('All Movies', _popularMovies),
+          ],
+
       ),
     );
   }
